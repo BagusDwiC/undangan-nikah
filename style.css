@@ -1,28 +1,81 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: 'Open Sans', sans-serif;
     color: #333;
+    background: #fff5f5;
   }
   
-  .container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?fit=crop&w=1400&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: white;
   }
   
-  h1 {
-    color: #b26e63;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
   }
   
-  a {
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  
+  .couple-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .invitation-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .location-button {
+    padding: 10px 20px;
+    background: #fff;
     color: #b26e63;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .section {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: #f8e1e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
     font-weight: bold;
   }
   
